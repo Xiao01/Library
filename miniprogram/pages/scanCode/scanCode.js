@@ -20,7 +20,7 @@ Page({
           // 传递给云函数的参数
           data: {
             //isbn: res.result
-            isbn: 9787020002207
+            isbn: res.result
           },
           success: res => {
             var bookString = res.result

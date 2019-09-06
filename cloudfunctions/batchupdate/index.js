@@ -8,7 +8,7 @@ const _ = db.command
 exports.main = async (event, context) => {
   try {
     return await db.collection('bookinfo').where({
-      _openid: "oK1SB4tF0GrSzxSZEKWCQTaY3DOw"
+      _openid: "oaqqm5GeNdxCFzEjeFcqDTCGGRtk"
     }).update({
         data: {
           Price:"68.8元"
@@ -20,3 +20,4 @@ exports.main = async (event, context) => {
 }
 
 
+//调用此批量修改的云函数方法 wx.cloud.callFunction({name:"batchupdate",data:{}})
