@@ -8,7 +8,8 @@ Page({
   onLoad:function(option){
     var _this = this;
     const db = wx.cloud.database()
-    db.collection('bookinfo').get({
+    // db.collection('bookinfo').get({
+    db.collection('bookinfo').limit(10).get({
       success :res =>{
         _this.setData({
           book_list:res.data

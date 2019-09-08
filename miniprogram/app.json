@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index1/index1",
     "pages/index/index",
     "pages/scanCode/scanCode",
     "pages/detail/detail"
@@ -26,5 +27,10 @@
       "selectedIconPath": "image/scan-active.png"
     }
     ]
+  },
+  "usingComponents": {
+    "van-tag": "vant/tag/index",
+    "van-button": "vant/button/index",
+    "van-card": "vant/card/index"
   }
 }
