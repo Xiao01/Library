@@ -1,0 +1,30 @@
+
+
+ <view wx:for="{{book_list}}" wx:key="{{item._id}}">
+<!-- <view>{{item.title}}</view>
+<view>{{item.bookurl}}</view> -->
+   <van-card num="" price="" desc="{{item.bookurl}}" title="{{item.title}}" thumb="" bind:click="">
+    <view slot="tags">
+      <van-tag></van-tag>
+      <van-tag type="primary"> </van-tag>
+    </view>
+    <view slot="footer">
+      <van-button size="mini" data-id="{{item._id}}" type="primary" plain bind:click="viewItem"></van-button>
+    </view>
+  </van-card> 
+</view> 
+<!--
+<view wx:for="{{book_list}}" wx:key="{{item._id}}">
+  <van-card num="{{item.Price}}" price="" desc="{{item.Author}}" title="{{item.BookName}}" thumb="http://isbn.szmesoft.com/ISBN/GetBookPhoto?ID={{item.PhotoUrl}}" bind:click="">
+    <view slot="tags">
+      <van-tag>{{item.BookCode}} </van-tag>
+      <van-tag type="primary"> {{item.Publishing}}</van-tag>
+    </view>
+
+    <view slot="footer">
+      <van-button size="mini" data-id="{{item._id}}" type="primary" plain bind:click="viewItem">查看详情</van-button>
+    </view>
+
+  </van-card>
+</view>
+-->

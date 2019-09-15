@@ -1,0 +1,13 @@
+<!--pages/scanCode/scanCode.wxml-->
+
+  
+<view class="container">
+  <view class="userinfo">
+
+    <block >
+      <image bindtap="scanCode" class="userinfo-avatar" src="../../image/txm.jpg" mode="cover"></image>
+      <text class="userinfo-nickname">点击扫图书条线码</text>
+    </block>
+  </view>
+  
+</view>

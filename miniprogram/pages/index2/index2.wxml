@@ -1,0 +1,28 @@
+
+<block wx:if="{{book_list.length<1}}">
+  <view class="body">
+
+    <image class='out' src="cloud://xiaoqn-j89h6.7869-xiaoqn-j89h6/goods/nothing.jpeg">
+      <text></text>
+    </image>
+
+  </view>
+
+ 
+</block>
+<block wx:else>
+ <view wx:for="{{book_list}}" wx:key="{{item._id}}">
+    <van-card num="{{item.Price}}" price="" desc="{{item.Author}}" title="{{item.BookName}}" thumb="http://isbn.szmesoft.com/ISBN/GetBookPhoto?ID={{item.PhotoUrl}}" bind:click="">
+      <view slot="tags">
+        <van-tag>{{item.BookCode}} </van-tag>
+        <van-tag type="primary"> {{item.Publishing}}</van-tag>
+      </view>
+
+      <view slot="footer">
+        <van-button size="mini" data-id="{{item._id}}" type="primary" plain bind:click="viewItem">查看详情</van-button>
+      </view>
+
+    </van-card>
+  </view>
+
+</block>

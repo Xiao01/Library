@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/scanCode/scanCode",
+    "pages/index2/index2",
+    "pages/index1/index1",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "私家书柜",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "list":[
+    {
+      "pagePath": "pages/scanCode/scanCode",
+      "text": "扫描加书",
+      "iconPath": "image/scan.png",
+      "selectedIconPath": "image/scan-active.png"
+    }
+    ,
+    {
+      "pagePath": "pages/index2/index2",
+      "text": "我的藏书",
+      "iconPath": "image/me.png",
+      "selectedIconPath": "image/me-active.png"
+    }
+    ]
+  },
+  "usingComponents": {
+    "van-tag": "vant/tag/index",
+    "van-button": "vant/button/index",
+    "van-card": "vant/card/index"
+  }
+}
